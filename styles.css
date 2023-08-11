@@ -140,7 +140,7 @@ header img {
     line-height: 120%;
     max-width: 420px;
     font-family: var(--font-principal);
-    max-width: 400px;
+    max-width: 360px;
 
 }
 .facultades h2{
@@ -156,6 +156,13 @@ header img {
     text-align: center;
     font-family: var(--font-principal);
     color: var(--color-secundario);
+    background-color: var(--color-principal);
+    margin: 0;
+    
+}
+.title h2 {
+    margin: 0;
+    padding: 10px;
 }
 
  #cuenta {
@@ -163,10 +170,12 @@ header img {
      justify-content: center;
      margin: 0px;
      padding: 10px 0;
+     background-color: var(--color-principal);
+
  }
 
  .simply-section {
-     background-color: var(--color-principal);
+     background-color: #ffff;
      color: var(--color-secundario);
      width: 20vw;
      max-width: 100px;
@@ -196,6 +205,7 @@ header img {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--color-principal);
 }
 .informacion h2 {
     padding: 0;
@@ -349,16 +359,6 @@ header img {
     color: var(--color-principal);
     border-radius: 30px;
   }
-#contenedor {
-    width: auto;
-    height: 60px;
-    margin: 0px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
 footer {
     width: 100%;
     height: auto;
