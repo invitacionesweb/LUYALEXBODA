@@ -131,7 +131,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    
 }
 .facultades p {
     margin: 0;
@@ -140,6 +140,7 @@ header img {
     line-height: 120%;
     max-width: 420px;
     font-family: var(--font-principal);
+    max-width: 400px;
 
 }
 .facultades h2{
@@ -390,14 +391,19 @@ footer img {
     padding: 0;
 
 }
-
+.bus {
+    padding: 20px 0;
+}
 .contenido a {
     color: var(--color-principal);
 }
 .contenido a:hover {
     color: var(--color-secundario);
 }
+.bus p {
+    max-width: 400px;
 
+}
 .end {
     font-family: var(--font-secundaria);
     background-color: var(--color-principal);
