@@ -152,6 +152,10 @@ header img {
     font-family: var(--font-secundaria);
 
 }
+.facultades img {
+    padding-top: 20px;
+    width: 200px;
+}
 .title {
     text-align: center;
     font-family: var(--font-principal);
@@ -176,6 +180,7 @@ header img {
 
  .simply-section {
      background-color: #ffff;
+     border-radius: 25%;
      color: var(--color-secundario);
      width: 20vw;
      max-width: 100px;
@@ -206,7 +211,18 @@ header img {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.informacion img {
+    margin: auto;
+    padding: 0;
+    width: 280px;
+}
+
 .informacion h2 {
     padding: 0;
     margin: 0;
@@ -239,17 +255,16 @@ header img {
     line-height: 120%;
     padding: 0;
     font-family: var(--font-principal);
-    
-
-    
+   
 }
 .galeria {
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.galeria img {
-    width: 25vw;
+    display: none;
+    margin: 0;
+    padding: 0;
 }
 .timing {
     width: 100%;
@@ -347,13 +362,51 @@ header img {
 .gifts img {
     width: 50px;
 }
-.gifts p {
+ p {
     margin: 0;
     padding: 0 30px;
 }
-.gifts .button {
+.gift-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.gift-box .button {
     width:180px;
-    padding: 14px 20px;
+    margin: auto;
+    padding: 8px 8px;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border-radius: 30px;
+  }
+
+.gift-box .button1 {
+    width:180px;
+    margin: auto;
+    padding: 8px 8px;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border-radius: 30px;
+  }
+  .gift-box .button2 {
+    width:180px;
+    padding: 8px 8px;
+    margin: auto;
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border-radius: 30px;
+  }
+
+  .gift-box .button3 {
+    width:180px;
+    margin: auto; 
+    padding: 8px 8px;
     border: 1px solid var(--color-secundario);
     background-color: var(--color-secundario);
     color: var(--color-principal);
@@ -400,11 +453,24 @@ footer img {
 .contenido a:hover {
     color: var(--color-secundario);
 }
-.bus p {
-    max-width: 400px;
-
+.QUOTE  {
+background-color: var(--color-secundario);
+color: var(--color-principal);
+width: 100vw;
+font-family: var(--font-principal);
+margin: 0;
+text-align: center;
+padding: 20px 0;
+}
+.QUOTE h3 {
+    padding: auto;
+    margin: auto;
+    max-width: 340px;
 }
 .end {
+    background-image: url(./img/endback.png);
+    background-size: cover;
+        background-position: center;
     font-family: var(--font-secundaria);
     background-color: var(--color-principal);
     color: var(--color-secundario);
@@ -417,7 +483,9 @@ footer img {
     margin: 0;
     padding: 0;
 }
-
+.end img {
+    width: 200px;
+}
  @media (max-width: 500px) {
     header {  
         background-image: url(./img/background1.png);
@@ -444,12 +512,18 @@ footer img {
         display: none;
     }
     .galeria {
+        width: 100vw;
         display: grid;
         grid-template-columns:1fr;
+        display: block;
+        margin: 0;
+        padding: 0;
     }
   
     .galeria img {
-        width: 100vw;
+        width: 100%;
+
+
     }
     .timing {
         flex-direction: column;
@@ -460,7 +534,9 @@ footer img {
         background-size: cover;
         
     }
-    
+    .gift-block {
+        flex-direction: column;
+    }
     .cards-spotify {
         background-image: none;
     }
