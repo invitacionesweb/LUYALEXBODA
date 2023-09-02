@@ -526,6 +526,7 @@ padding: 20px 0;
 
     }
     .timing {
+        padding: 40px 0 ;
         flex-direction: column;
         gap: 20px;
         background-image: url(./img/background4.png);
